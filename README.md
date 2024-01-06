@@ -5,10 +5,10 @@
 Welcome to Team Forte's code repository for the Holonomic X-Drive used in the 2024 VEX V5 competition (Over Under). This codebase is designed to provide precise control and optimal performance for our robot during the competition.
 
 ## 
-/src
-    |-- holonomic_x_drive.v5python
-    |-- holonomic_x_drive.v5cpp
-    |-- holonomic_x_drive.v5blocks
+/src /n
+    ├── holonomic_x_drive.v5python /n
+    ├── holonomic_x_drive.v5cpp /n
+    └── holonomic_x_drive.v5blocks /n
 - `holonomic_x_drive.v5python`: Python implementation of the code using VEX V5 Python API.
 - `holonomic_x_drive.v5cpp`: C++ implementation of the code using VEX V5 C++ API.
 - `holonomic_x_drive.v5blocks`: VEXcode Blocks project file for graphical programming.
