@@ -6,9 +6,9 @@ Welcome to Team Forte's code repository for the Holonomic X-Drive used in the 20
 
 ## 
 /src
-    ├── holonomic_x_drive.v5python
-    ├── holonomic_x_drive.v5cpp
-    └── holonomic_x_drive.v5blocks
+    |-- holonomic_x_drive.v5python
+    |-- holonomic_x_drive.v5cpp
+    |-- holonomic_x_drive.v5blocks
 - `holonomic_x_drive.v5python`: Python implementation of the code using VEX V5 Python API.
 - `holonomic_x_drive.v5cpp`: C++ implementation of the code using VEX V5 C++ API.
 - `holonomic_x_drive.v5blocks`: VEXcode Blocks project file for graphical programming.
