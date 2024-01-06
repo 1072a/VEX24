@@ -1,0 +1,141 @@
+float myVariable;
+
+// "when started" hat block
+int whenStarted1() {
+  Motor1.setVelocity(100.0, percent);
+  Motor20.setVelocity(100.0, percent);
+  Motor11.setVelocity(100.0, percent);
+  Motor10.setVelocity(100.0, percent);
+  Controller1.rumble("-.-.");
+  return 0;
+}
+
+// "when Controller1 ButtonUp pressed" hat block
+void onevent_Controller1ButtonUp_pressed_0() {
+  Controller1.rumble("....");
+  Motor1.spin(forward);
+  Motor10.spin(forward);
+  Motor11.spin(forward);
+  Motor20.spin(forward);
+}
+
+// "when Controller1 ButtonDown pressed" hat block
+void onevent_Controller1ButtonDown_pressed_0() {
+  Controller1.rumble("....");
+  Motor1.spin(reverse);
+  Motor10.spin(reverse);
+  Motor11.spin(reverse);
+  Motor20.spin(reverse);
+}
+
+// "when Controller1 ButtonRight pressed" hat block
+void onevent_Controller1ButtonRight_pressed_0() {
+  Controller1.rumble("....");
+  Motor1.spin(forward);
+  Motor10.spin(reverse);
+  Motor11.spin(reverse);
+  Motor20.spin(forward);
+}
+
+// "when Controller1 ButtonLeft pressed" hat block
+void onevent_Controller1ButtonLeft_pressed_0() {
+  Controller1.rumble("....");
+  Motor1.spin(reverse);
+  Motor10.spin(forward);
+  Motor11.spin(forward);
+  Motor20.spin(reverse);
+}
+
+// "when Controller1 ButtonA pressed" hat block
+void onevent_Controller1ButtonA_pressed_0() {
+  Controller1.rumble("....");
+  Motor1.spin(forward);
+  Motor10.spin(reverse);
+  Motor11.spin(forward);
+  Motor20.spin(reverse);
+}
+
+// "when Controller1 ButtonY pressed" hat block
+void onevent_Controller1ButtonY_pressed_0() {
+  Controller1.rumble("....");
+  Motor1.spin(reverse);
+  Motor10.spin(forward);
+  Motor11.spin(reverse);
+  Motor20.spin(forward);
+}
+
+// "when Controller1 ButtonUp released" hat block
+void onevent_Controller1ButtonUp_released_0() {
+  Motor1.stop();
+  Motor10.stop();
+  Motor11.stop();
+  Motor20.stop();
+}
+
+// "when Controller1 ButtonDown released" hat block
+void onevent_Controller1ButtonDown_released_0() {
+  Motor1.stop();
+  Motor10.stop();
+  Motor11.stop();
+  Motor20.stop();
+}
+
+// "when Controller1 ButtonRight released" hat block
+void onevent_Controller1ButtonRight_released_0() {
+  Motor1.stop();
+  Motor10.stop();
+  Motor11.stop();
+  Motor20.stop();
+}
+
+// "when Controller1 ButtonLeft released" hat block
+void onevent_Controller1ButtonLeft_released_0() {
+  Motor1.stop();
+  Motor10.stop();
+  Motor11.stop();
+  Motor20.stop();
+}
+
+// "when Controller1 ButtonY released" hat block
+void onevent_Controller1ButtonY_released_0() {
+  Motor1.stop();
+  Motor10.stop();
+  Motor11.stop();
+  Motor20.stop();
+}
+
+// "when Controller1 ButtonA released" hat block
+void onevent_Controller1ButtonA_released_0() {
+  Motor1.stop();
+  Motor10.stop();
+  Motor11.stop();
+  Motor20.stop();
+}
+
+
+int main() {
+  // register event handlers
+  Controller1.ButtonUp.pressed(onevent_Controller1ButtonUp_pressed_0);
+  Controller1.ButtonDown.pressed(onevent_Controller1ButtonDown_pressed_0);
+  Controller1.ButtonRight.pressed(onevent_Controller1ButtonRight_pressed_0);
+  Controller1.ButtonLeft.pressed(onevent_Controller1ButtonLeft_pressed_0);
+  Controller1.ButtonA.pressed(onevent_Controller1ButtonA_pressed_0);
+  Controller1.ButtonY.pressed(onevent_Controller1ButtonY_pressed_0);
+  Controller1.ButtonUp.released(onevent_Controller1ButtonUp_released_0);
+  Controller1.ButtonDown.released(onevent_Controller1ButtonDown_released_0);
+  Controller1.ButtonRight.released(onevent_Controller1ButtonRight_released_0);
+  Controller1.ButtonLeft.released(onevent_Controller1ButtonLeft_released_0);
+  Controller1.ButtonY.released(onevent_Controller1ButtonY_released_0);
+  Controller1.ButtonA.released(onevent_Controller1ButtonA_released_0);
+
+  wait(15, msec);
+  // post event registration
+
+  // set default print color to black
+  printf("\033[30m");
+
+  // wait for rotation sensor to fully initialize
+  wait(30, msec);
+
+  whenStarted1();
+}

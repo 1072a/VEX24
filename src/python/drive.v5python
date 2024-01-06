@@ -1,0 +1,117 @@
+myVariable = 0
+
+def when_started1():
+    global myVariable
+    motor_1.set_velocity(100, PERCENT)
+    motor_20.set_velocity(100, PERCENT)
+    motor_11.set_velocity(100, PERCENT)
+    motor_10.set_velocity(100, PERCENT)
+    controller_1.rumble("-.-.")
+
+def onevent_controller_1buttonUp_pressed_0():
+    global myVariable
+    controller_1.rumble("....")
+    motor_1.spin(FORWARD)
+    motor_10.spin(FORWARD)
+    motor_11.spin(FORWARD)
+    motor_20.spin(FORWARD)
+
+def onevent_controller_1buttonDown_pressed_0():
+    global myVariable
+    controller_1.rumble("....")
+    motor_1.spin(REVERSE)
+    motor_10.spin(REVERSE)
+    motor_11.spin(REVERSE)
+    motor_20.spin(REVERSE)
+
+def onevent_controller_1buttonRight_pressed_0():
+    global myVariable
+    controller_1.rumble("....")
+    motor_1.spin(FORWARD)
+    motor_10.spin(REVERSE)
+    motor_11.spin(REVERSE)
+    motor_20.spin(FORWARD)
+
+def onevent_controller_1buttonLeft_pressed_0():
+    global myVariable
+    controller_1.rumble("....")
+    motor_1.spin(REVERSE)
+    motor_10.spin(FORWARD)
+    motor_11.spin(FORWARD)
+    motor_20.spin(REVERSE)
+
+def onevent_controller_1buttonA_pressed_0():
+    global myVariable
+    controller_1.rumble("....")
+    motor_1.spin(FORWARD)
+    motor_10.spin(REVERSE)
+    motor_11.spin(FORWARD)
+    motor_20.spin(REVERSE)
+
+def onevent_controller_1buttonY_pressed_0():
+    global myVariable
+    controller_1.rumble("....")
+    motor_1.spin(REVERSE)
+    motor_10.spin(FORWARD)
+    motor_11.spin(REVERSE)
+    motor_20.spin(FORWARD)
+
+def onevent_controller_1buttonUp_released_0():
+    global myVariable
+    motor_1.stop()
+    motor_10.stop()
+    motor_11.stop()
+    motor_20.stop()
+
+def onevent_controller_1buttonDown_released_0():
+    global myVariable
+    motor_1.stop()
+    motor_10.stop()
+    motor_11.stop()
+    motor_20.stop()
+
+def onevent_controller_1buttonRight_released_0():
+    global myVariable
+    motor_1.stop()
+    motor_10.stop()
+    motor_11.stop()
+    motor_20.stop()
+
+def onevent_controller_1buttonLeft_released_0():
+    global myVariable
+    motor_1.stop()
+    motor_10.stop()
+    motor_11.stop()
+    motor_20.stop()
+
+def onevent_controller_1buttonY_released_0():
+    global myVariable
+    motor_1.stop()
+    motor_10.stop()
+    motor_11.stop()
+    motor_20.stop()
+
+def onevent_controller_1buttonA_released_0():
+    global myVariable
+    motor_1.stop()
+    motor_10.stop()
+    motor_11.stop()
+    motor_20.stop()
+
+# system event handlers
+controller_1.buttonUp.pressed(onevent_controller_1buttonUp_pressed_0)
+controller_1.buttonDown.pressed(onevent_controller_1buttonDown_pressed_0)
+controller_1.buttonRight.pressed(onevent_controller_1buttonRight_pressed_0)
+controller_1.buttonLeft.pressed(onevent_controller_1buttonLeft_pressed_0)
+controller_1.buttonA.pressed(onevent_controller_1buttonA_pressed_0)
+controller_1.buttonY.pressed(onevent_controller_1buttonY_pressed_0)
+controller_1.buttonUp.released(onevent_controller_1buttonUp_released_0)
+controller_1.buttonDown.released(onevent_controller_1buttonDown_released_0)
+controller_1.buttonRight.released(onevent_controller_1buttonRight_released_0)
+controller_1.buttonLeft.released(onevent_controller_1buttonLeft_released_0)
+controller_1.buttonY.released(onevent_controller_1buttonY_released_0)
+controller_1.buttonA.released(onevent_controller_1buttonA_released_0)
+# add 15ms delay to make sure events are registered correctly.
+wait(15, MSEC)
+
+when_started1()
