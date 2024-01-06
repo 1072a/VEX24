@@ -14,7 +14,10 @@ Welcome to Team Forte's code repository for the Holonomic X-Drive used in the 20
 To use this codebase, follow these steps:
 
 1. **Selecting the Right Implementation:**
-   - Choose the appropriate file based on your preferred programming language: Python (`holonomic_x_drive.v5python`), C++ (`holonomic_x_drive.v5cpp`), or graphical programming using VEXcode Blocks (`holonomic_x_drive.v5blocks`).
+   - Choose the appropriate file based on your preferred programming language:
+      - VEXcode Python (`holonomic_x_drive.v5python`)
+      - VEXcode C++ (`holonomic_x_drive.v5cpp`)
+      - VEXcode Blocks (`holonomic_x_drive.v5blocks`).
 
 2. **Downloading Dependencies:**
    - Ensure that you have the necessary dependencies and libraries installed for your chosen programming language.
